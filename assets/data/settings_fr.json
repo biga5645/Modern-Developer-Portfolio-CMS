@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "site_name": "DevPortfolio Pro",
+    "site_tagline": "Développeur Web & Mobile Full Stack",
+    "site_description": "Portfolio professionnel présentant des projets modernes de développement web et mobile",
+    "hero_title": "Je conçois des solutions web modernes et innovantes",
+    "hero_subtitle": "Développeur passionné transformant vos idées en applications fluides, ultra-rapides et sécurisées",
+    "hero_cta": "Découvrir mes projets",
+    "about_title": "À propos de moi",
+    "about_description": "Développeur passionné avec une solide expérience dans la création d'applications web et mobiles. Je privilégie un code propre, performant et centré sur l'expérience utilisateur.",
+    "services_title": "Mes Services",
+    "projects_title": "Mes Projets",
+    "skills_title": "Compétences Techniques",
+    "testimonials_title": "Témoignages Clients",
+    "contact_title": "Contactez-moi",
+    "contact_email": "contact@example.com",
+    "contact_phone": "+1 (555) 234-5678",
+    "contact_whatsapp": "+1 (555) 234-5678",
+    "contact_address": "Disponible en télétravail / Partout dans le monde",
+    "social_github": "https://github.com/yourusername",
+    "social_linkedin": "https://linkedin.com/in/yourusername",
+    "social_twitter": "https://twitter.com/yourusername",
+    "social_instagram": "https://instagram.com/yourusername",
+    "footer_text": "© 2026 DevPortfolio. Tous droits réservés.",
+    "years_experience": "5+",
+    "projects_count": "40+",
+    "clients_count": "25+",
+    "satisfaction_rate": "100%"
+  }
+}

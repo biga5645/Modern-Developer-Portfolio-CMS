@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="description" content="بورتفوليو احترافي لعرض الأعمال والمهارات البرمجية وتطوير الويب وتطبيقات الهاتف">
+  <meta name="theme-color" content="#6c63ff">
+  <title>DevPortfolio Pro - مطور ويب وتطبيقات متكامل</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons: Font Awesome + Devicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Set lang cookie -->
+  <script>
+    (function(){
+      const lang = localStorage.getItem('portfolio_lang') || 'ar';
+      document.cookie = 'portfolio_lang=' + lang + ';path=/;max-age=2592000';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    })();
+  </script>
+
+  <style>
+    /* Gumroad Demo Promotional Bar */
+    .demo-bar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: linear-gradient(90deg, #181236, #0e1a38, #1c102c);
+      border-bottom: 1px solid rgba(108, 99, 255, 0.4);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: 'Cairo', 'Segoe UI', sans-serif;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .demo-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .demo-tag {
+      background: #6c63ff;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .demo-msg {
+      color: #e0e0f0;
+      font-size: 0.85rem;
+    }
+    .demo-msg strong {
+      color: #00d4ff;
+    }
+    .demo-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #ff6b9d, #6c63ff);
+      color: #fff !important;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 8px;
+      text-decoration: none !important;
+      transition: 0.25s ease;
+      box-shadow: 0 4px 15px rgba(255, 107, 157, 0.35);
+      white-space: nowrap;
+    }
+    .demo-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 107, 157, 0.5);
+    }
+    .demo-close-btn {
+      background: none;
+      border: none;
+      color: #888;
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 0 6px;
+      line-height: 1;
+    }
+    .demo-close-btn:hover { color: #fff; }
+    @media(max-width: 768px) {
+      .demo-bar { flex-direction: column; text-align: center; }
+      .demo-bar-left { justify-content: center; }
+    }
+  </style>
+  
+</head>
+<body dir="rtl">
+
+  <!-- DEMO PROMOTIONAL BANNER -->
+  <div class="demo-bar" id="demo-bar">
+    <div class="demo-bar-left">
+      <span class="demo-tag">⚡ Live Preview</span>
+      <span class="demo-msg">This is a public preview. The full commercial version includes a <strong>Custom PHP/MySQL Admin Panel</strong>, 1-Click Installer, and Docker!</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <a href="https://gumroad.com" target="_blank" class="demo-cta">
+        <i class="fas fa-shopping-cart"></i> Buy Full Template on Gumroad
+      </a>
+      <button class="demo-close-btn" onclick="document.getElementById('demo-bar').style.display='none'">&times;</button>
+    </div>
+  </div>
+  
+
+<!-- ============================================================ -->
+<!-- LOADING SCREEN -->
+<!-- ============================================================ -->
+<div id="loading-screen">
+  <div class="loader-logo">DevPortfolio Pro</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NAVBAR -->
+<!-- ============================================================ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo" data-setting="site_name">
+      DevPortfolio Pro    </a>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+      <!-- Close button (mobile) -->
+      <button class="nav-close" onclick="document.getElementById('nav-links').classList.remove('open')">
+        <i class="fas fa-times"></i>
+      </button>
+      <li><a href="#hero"         data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="#about"        data-i18n="nav_about">من نحن</a></li>
+      <li><a href="#services"     data-i18n="nav_services">الخدمات</a></li>
+      <li><a href="#projects"     data-i18n="nav_projects">المشاريع</a></li>
+      <li><a href="#skills"       data-i18n="nav_skills">المهارات</a></li>
+      <li><a href="#testimonials" data-i18n="nav_testimonials">آراء العملاء</a></li>
+      <li><a href="#contact"      data-i18n="nav_contact">تواصل</a></li>
+    </ul>
+
+    <!-- Actions: Lang + Hamburger -->
+    <div class="nav-actions">
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="ar">AR</button>
+        <button class="lang-btn " data-lang="fr">FR</button>
+        <button class="lang-btn " data-lang="en">EN</button>
+      </div>
+      <!-- Mobile Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================ -->
+<!-- HERO SECTION -->
+<!-- ============================================================ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="particles"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <!-- Badge -->
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>مطور ويب وتطبيقات متكامل</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="hero-title" id="hero-title">
+        أبني تجارب ويب استثنائية ومنتجات رقمية مبتكرة      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-subtitle" id="hero-subtitle">
+        مطور شغوف بتحويل الأفكار المعقدة إلى واجهات سلسة، وتطبيقات سريعة، وبنية برمجية متماسكة      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-primary btn-lg" id="hero-cta">
+          <i class="fas fa-rocket"></i>
+          استكشف أعمالي        </a>
+        <a href="#contact" class="btn btn-outline btn-lg">
+          <i class="fas fa-paper-plane"></i>
+          تواصل معنا        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-stat="years_experience">5+</div>
+          <div class="hero-stat-label" data-i18n="stat_experience">سنوات خبرة</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-stat="projects_count">40+</div>
+          <div class="hero-stat-label" data-i18n="stat_projects">مشروع منجز</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-stat="clients_count">25+</div>
+          <div class="hero-stat-label" data-i18n="stat_clients">عميل سعيد</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-stat="satisfaction_rate">100%</div>
+          <div class="hero-stat-label" data-i18n="stat_satisfaction">نسبة رضا</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span data-i18n="hero_scroll">مرّر للأسفل</span>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- ABOUT SECTION -->
+<!-- ============================================================ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Visual -->
+      <div class="about-visual animate-on-scroll">
+        <div class="about-img-wrapper">
+          <div class="about-img-circle">
+            <div class="about-img-inner">من</div>
+          </div>
+        </div>
+        <!-- Floating badges -->
+        <div class="about-floating-badge b1">
+          <i class="fas fa-code" style="color:#6c63ff"></i>
+          <span>كود نظيف</span>
+        </div>
+        <div class="about-floating-badge b2">
+          <i class="fas fa-bolt" style="color:#ffd700"></i>
+          <span>أداء عالٍ</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content animate-on-scroll animate-delay-2">
+        <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
+          <span class="hero-badge-dot"></span>
+          <span>من نحن</span>
+        </div>
+        <h2 id="about-title">نبذة عني</h2>
+        <div class="section-divider" style="margin:16px 0;"></div>
+        <p id="about-description">مطور برمجيات ذو خبرة في بناء تطبيقات الويب والهواتف وتطوير واجهات المستخدم التفاعلية. أركز على تقديم حلول عملية، نظيفة الكود، وسريعة الأداء تلبي احتياجات المستخدمين وتساعد المشاريع على النمو.</p>
+
+        <!-- Strengths -->
+        <ul class="about-features">
+          <li><i class="fas fa-check-circle"></i> <span data-i18n="about_strength_1">كود نظيف قابل للتوسع</span></li>
+          <li><i class="fas fa-clock"></i> <span data-i18n="about_strength_2">التسليم في الوقت المحدد</span></li>
+          <li><i class="fas fa-headset"></i> <span data-i18n="about_strength_3">دعم فني مستمر</span></li>
+          <li><i class="fas fa-paint-brush"></i> <span data-i18n="about_strength_4">تصميم عصري أنيق</span></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary" style="margin-top:8px">
+          <i class="fas fa-handshake"></i>
+          ابدأ مشروعك        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SERVICES SECTION -->
+<!-- ============================================================ -->
+<section id="services" class="section" style="background:rgba(0,0,0,0.2)">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
+        <span class="hero-badge-dot"></span>
+        <span>ما نقدمه</span>
+      </div>
+      <h2 id="services-title">خدماتي</h2>
+      <div class="section-divider"></div>
+      <p>نقدّم مجموعة متكاملة من الخدمات الرقمية المصممة لنجاح أعمالك</p>
+    </div>
+    <!-- Dynamically loaded by JS -->
+    <div class="services-grid" id="services-grid">
+      <div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:40px">
+        <i class="fas fa-spinner fa-spin" style="font-size:2rem;color:var(--primary)"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PROJECTS SECTION -->
+<!-- ============================================================ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
+        <span class="hero-badge-dot"></span>
+        <span>أعمالنا</span>
+      </div>
+      <h2 id="projects-title">مشاريعي</h2>
+      <div class="section-divider"></div>
+      <p>نماذج من أبرز مشاريعنا المنجزة بجودة عالية</p>
+    </div>
+    <!-- Filter buttons (loaded by JS) -->
+    <div class="projects-filter" id="projects-filter"></div>
+    <!-- Grid (loaded by JS) -->
+    <div class="projects-grid" id="projects-grid">
+      <div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:40px">
+        <i class="fas fa-spinner fa-spin" style="font-size:2rem;color:var(--primary)"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SKILLS SECTION -->
+<!-- ============================================================ -->
+<section id="skills" class="section" style="background:rgba(0,0,0,0.2)">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
+        <span class="hero-badge-dot"></span>
+        <span>تقنياتنا</span>
+      </div>
+      <h2 id="skills-title">المهارات والتقنيات</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div id="skills-container">
+      <div style="text-align:center;color:var(--text-muted);padding:40px">
+        <i class="fas fa-spinner fa-spin" style="font-size:2rem;color:var(--primary)"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- TESTIMONIALS SECTION -->
+<!-- ============================================================ -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
+        <span class="hero-badge-dot"></span>
+        <span>ماذا يقول عملاؤنا</span>
+      </div>
+      <h2 id="testimonials-title">آراء العملاء</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="testimonials-slider animate-on-scroll">
+      <div class="testimonials-track" id="testimonials-track">
+        <!-- Loaded by JS -->
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="slider-prev">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots" id="slider-dots"></div>
+        <button class="slider-btn" id="slider-next">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CONTACT SECTION -->
+<!-- ============================================================ -->
+<section id="contact" class="section" style="background:rgba(0,0,0,0.2)">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
+        <span class="hero-badge-dot"></span>
+        <span>هل لديك مشروع؟</span>
+      </div>
+      <h2 id="contact-title">تواصل معي</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="animate-on-scroll">
+        <h3>معلومات التواصل</h3>
+        <p style="color:var(--text-secondary);margin-top:8px;margin-bottom:28px">
+          نحن هنا للإجابة عن استفساراتك        </p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-item-text">
+            <label>البريد الإلكتروني</label>
+            <a href="mailto:contact@example.com" data-setting="contact_email">contact@example.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-item-text">
+            <label>الهاتف</label>
+            <a href="tel:+1 (555) 234-5678" data-setting="contact_phone">+1 (555) 234-5678</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon" style="background:rgba(37,211,102,0.15);border-color:rgba(37,211,102,0.3);color:#25d366"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <label>WhatsApp</label>
+            <a href="https://wa.me/+1 (555) 234-5678" target="_blank" id="whatsapp-link" data-setting="contact_phone">+1 (555) 234-5678</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-item-text">
+            <label>العنوان</label>
+            <span data-setting="contact_address">متاح للعمل عن بُعد وحول العالم</span>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links" style="margin-top:28px">
+          <a href="#" class="social-link" data-social="github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" data-social="linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" data-social="twitter" target="_blank" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-link" data-social="instagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="animate-on-scroll animate-delay-2">
+        <div class="glass-card contact-form-card">
+          <div id="form-feedback" class="form-feedback"></div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_name">الاسم الكامل</label>
+                <input type="text" name="name" class="form-control" required
+                  placeholder="اكتب اسمك...">
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_email">البريد الإلكتروني</label>
+                <input type="email" name="email" class="form-control" required
+                  placeholder="example@email.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_phone"> رقم الهاتف</label>
+                <input type="tel" name="phone" class="form-control"
+                  placeholder="+212 ...">
+              </div>
+              <div class="form-group">                  
+                <label class="form-label" data-i18n="form_subject"> الموضوع</label>
+                <input type="text" name="subject" class="form-control"
+                  placeholder="موضوع الرسالة">
+              </div>
+              </div>
+              <!-- Project Type -->
+              <div class="form-group">
+                <label class="form-label" data-i18n="form_project_type">نوع المشروع</label>
+                <div class="project-type-grid" id="project-type-grid">
+                  <label class="project-type-option">
+                    <input type="radio" name="project_type" value="web">
+                    <span class="project-type-card">
+                      <i class="fas fa-globe"></i>
+                      <span data-i18n="project_type_web">موقع ويب</span>
+                    </span>
+                  </label>
+                  <label class="project-type-option">
+                    <input type="radio" name="project_type" value="android">
+                    <span class="project-type-card">
+                      <i class="fab fa-android"></i>
+                      <span data-i18n="project_type_android">تطبيق أندرويد</span>
+                    </span>
+                  </label>
+                  <label class="project-type-option">
+                    <input type="radio" name="project_type" value="desktop">
+                    <span class="project-type-card">
+                      <i class="fas fa-desktop"></i>
+                      <span data-i18n="project_type_desktop">تطبيق سطح المكتب</span>
+                    </span>
+                  </label>
+                  <label class="project-type-option">
+                    <input type="radio" name="project_type" value="design">
+                    <span class="project-type-card">
+                      <i class="fas fa-paint-brush"></i>
+                      <span data-i18n="project_type_design">تصميم UI/UX</span>
+                    </span>
+                  </label>
+                  <label class="project-type-option">
+                    <input type="radio" name="project_type" value="other">
+                    <span class="project-type-card">
+                      <i class="fas fa-ellipsis-h"></i>
+                      <span data-i18n="project_type_other">أخرى</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_message">الرسالة </label>
+              <textarea name="message" class="form-control" rows="5" required
+                placeholder="اكتب رسالتك هنا..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">
+              <i class="fas fa-paper-plane"></i>
+              <span data-i18n="form_send">إرسال الرسالة</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="nav-logo" data-setting="site_name">DevPortfolio Pro</div>
+        <p>بورتفوليو احترافي لعرض الأعمال والمهارات البرمجية وتطوير الويب وتطبيقات الهاتف</p>
+        <div class="social-links" style="margin-top:16px">
+          <a href="#" class="social-link" data-social="github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" data-social="linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" data-social="twitter" target="_blank" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-link" data-social="instagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="#about"    data-i18n="nav_about"> من نحن</a></li>
+          <li><a href="#services" data-i18n="nav_services"> الخدمات</a></li>
+          <li><a href="#projects" data-i18n="nav_projects"> المشاريع</a></li>
+          <li><a href="#skills"   data-i18n="nav_skills"> المهارات</a></li>
+          <li><a href="admin/">  لوحة التحكم</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>تواصل</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@example.com">contact@example.com</a></li>
+          <li><a href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></li> 
+          <li><span>متاح للعمل عن بُعد وحول العالم</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span id="footer-text">© 2026 DevPortfolio. جميع الحقوق محفوظة.</span>
+      <span>صُنع بـ ❤️ DevPortfolio Pro</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top button -->
+<button id="scrollTop" title="العودة للأعلى">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Main JS (defer for performance) -->
+<script src="assets/js/main.js?v=1791630631" defer></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "site_name": "DevPortfolio Pro",
+    "site_tagline": "Full Stack Web & Mobile Developer",
+    "site_description": "Professional developer portfolio showcasing modern web, mobile applications and engineering skills",
+    "hero_title": "Building High-Performance Web Apps & Scalable Products",
+    "hero_subtitle": "Passionate software engineer crafting clean, responsive, and robust web applications with modern architecture",
+    "hero_cta": "Explore My Work",
+    "about_title": "About Me",
+    "about_description": "Software engineer with solid experience building performant web and mobile applications. Focused on scalable architectures, intuitive user experiences, and maintainable codebases.",
+    "services_title": "My Services",
+    "projects_title": "Featured Projects",
+    "skills_title": "Technical Skills",
+    "testimonials_title": "Client Testimonials",
+    "contact_title": "Get In Touch",
+    "contact_email": "contact@example.com",
+    "contact_phone": "+1 (555) 234-5678",
+    "contact_whatsapp": "+1 (555) 234-5678",
+    "contact_address": "Available Worldwide / Remote",
+    "social_github": "https://github.com/yourusername",
+    "social_linkedin": "https://linkedin.com/in/yourusername",
+    "social_twitter": "https://twitter.com/yourusername",
+    "social_instagram": "https://instagram.com/yourusername",
+    "footer_text": "© 2026 DevPortfolio. All rights reserved.",
+    "years_experience": "5+",
+    "projects_count": "40+",
+    "clients_count": "25+",
+    "satisfaction_rate": "100%"
+  }
+}

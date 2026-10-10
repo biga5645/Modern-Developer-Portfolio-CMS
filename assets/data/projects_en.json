@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform Pro",
+      "description": "Comprehensive e-commerce portal with payment processing and automated inventory management",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, CSS3",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 2,
+      "title": "SaaS Analytics Dashboard",
+      "description": "Cloud analytics dashboard featuring live metric charts, team roles, and real-time activity",
+      "image": null,
+      "technologies": "HTML5, JavaScript, Chart.js, PHP",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Dashboard"
+    },
+    {
+      "id": 3,
+      "title": "Task & Project Tracker",
+      "description": "Productivity web application for tracking sprints, team velocity, and project milestones",
+      "image": null,
+      "technologies": "PHP, REST API, MySQL, Tailwind",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 4,
+      "title": "Smart Real Estate Portal",
+      "description": "Full-featured property directory with interactive maps and inquiry pipelines",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, CSS Grid",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 5,
+      "title": "Fitness & Habit Companion",
+      "description": "Mobile companion app helping users log workouts, nutrition, and daily habits",
+      "image": null,
+      "technologies": "Mobile, REST API, SQLite, Firebase",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Mobile"
+    },
+    {
+      "id": 6,
+      "title": "Billing & POS System",
+      "description": "Lightweight invoice generator and point-of-sale system with automated PDF reports",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, Bootstrap",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Dashboard"
+    }
+  ]
+}

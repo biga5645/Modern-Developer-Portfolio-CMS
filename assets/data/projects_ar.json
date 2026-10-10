@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "title": "منصة التجارة الإلكترونية Pro",
+      "description": "منصة تسوق متكاملة مع سلة مشتريات وبوابات دفع وإدارة متقدمة للمخزون والطلبات",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, CSS3",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 2,
+      "title": "لوحة تحكم SaaS Analytics",
+      "description": "نظام تحليلات سحابي مع رسوم بيانية تفاعلية في الوقت الحقيقي وإدارة الفرق",
+      "image": null,
+      "technologies": "HTML5, JavaScript, Chart.js, PHP",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Dashboard"
+    },
+    {
+      "id": 3,
+      "title": "تطبيق إدارة المهام والمشاريع",
+      "description": "تطبيق متجاوب لإدارة مشاريع الفرق ومتابعة الإنجاز مع إشعارات فورية",
+      "image": null,
+      "technologies": "PHP, REST API, MySQL, Tailwind",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 4,
+      "title": "بوابة العقارات الذكية",
+      "description": "منصة عقارية متقدمة مع بحث جغرافي وتصفية ديناميكية ونظام حجز واستفسار",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, CSS Grid",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 5,
+      "title": "تطبيق اللياقة البدنية والصحة",
+      "description": "تطبيق أندرويد لتتبع التمارين اليومية والسعرات الحرارية مع إحصائيات بصرية",
+      "image": null,
+      "technologies": "Mobile, REST API, SQLite, Firebase",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Mobile"
+    },
+    {
+      "id": 6,
+      "title": "نظام إدارة الفواتير والمبيعات",
+      "description": "نظام إدارة نقاط البيع وإصدار الفواتير الضريبية وتتبع المدفوعات للشركات الصغيرة",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, Bootstrap",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "title": "Plateforme E-Commerce Pro",
+      "description": "Boutique en ligne complète avec passerelle de paiement et gestion des stocks",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, CSS3",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 2,
+      "title": "Tableau de bord SaaS Analytics",
+      "description": "Dashboard analytique avec visualisations de données et métriques en temps réel",
+      "image": null,
+      "technologies": "HTML5, JavaScript, Chart.js, PHP",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Dashboard"
+    },
+    {
+      "id": 3,
+      "title": "Application Gestion de Projets",
+      "description": "Application collaborative de suivi de projets et gestion des tâches quotidiennes",
+      "image": null,
+      "technologies": "PHP, REST API, MySQL, Tailwind",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 4,
+      "title": "Portail Immobilier Intelligent",
+      "description": "Plateforme immobilière avec recherche géolocalisée et filtres avancés",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, CSS Grid",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Web"
+    },
+    {
+      "id": 5,
+      "title": "Application Mobile Fitness",
+      "description": "Application mobile de fitness avec suivi des activités et statistiques",
+      "image": null,
+      "technologies": "Mobile, REST API, SQLite, Firebase",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Mobile"
+    },
+    {
+      "id": 6,
+      "title": "Système Facturation & POS",
+      "description": "Système de facturation et gestion des ventes pour petites et moyennes entreprises",
+      "image": null,
+      "technologies": "PHP, MySQL, JavaScript, Bootstrap",
+      "demo_url": null,
+      "github_url": null,
+      "category": "Dashboard"
+    }
+  ]
+}

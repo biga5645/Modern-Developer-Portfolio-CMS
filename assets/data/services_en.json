@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "icon": "fas fa-globe",
+      "title": "Full Stack Web Development",
+      "description": "Building fast, responsive, and secure web applications tailored to business needs",
+      "color": "#00d4ff"
+    },
+    {
+      "id": 2,
+      "icon": "fab fa-android",
+      "title": "Mobile App Development",
+      "description": "Modern cross-platform and native mobile applications with intuitive UI/UX",
+      "color": "#6c63ff"
+    },
+    {
+      "id": 3,
+      "icon": "fas fa-tachometer-alt",
+      "title": "Admin Dashboards & CMS",
+      "description": "Custom administrative dashboards and CMS solutions for smooth data management",
+      "color": "#ff6b9d"
+    },
+    {
+      "id": 4,
+      "icon": "fas fa-palette",
+      "title": "UI/UX Design",
+      "description": "Crafting engaging, accessible, and high-converting user interfaces and design systems",
+      "color": "#ffd700"
+    },
+    {
+      "id": 5,
+      "icon": "fas fa-database",
+      "title": "APIs & Database Architecture",
+      "description": "Architecting efficient SQL schemas and building reliable, scalable REST APIs",
+      "color": "#00d4ff"
+    },
+    {
+      "id": 6,
+      "icon": "fas fa-rocket",
+      "title": "Performance & SEO",
+      "description": "Optimizing web vitals, speed audits, and organic search engine visibility",
+      "color": "#6c63ff"
+    }
+  ]
+}

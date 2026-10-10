@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "site_name": "DevPortfolio Pro",
+    "site_tagline": "مطور ويب وتطبيقات متكامل",
+    "site_description": "بورتفوليو احترافي لعرض الأعمال والمهارات البرمجية وتطوير الويب وتطبيقات الهاتف",
+    "hero_title": "أبني تجارب ويب استثنائية ومنتجات رقمية مبتكرة",
+    "hero_subtitle": "مطور شغوف بتحويل الأفكار المعقدة إلى واجهات سلسة، وتطبيقات سريعة، وبنية برمجية متماسكة",
+    "hero_cta": "استكشف أعمالي",
+    "about_title": "نبذة عني",
+    "about_description": "مطور برمجيات ذو خبرة في بناء تطبيقات الويب والهواتف وتطوير واجهات المستخدم التفاعلية. أركز على تقديم حلول عملية، نظيفة الكود، وسريعة الأداء تلبي احتياجات المستخدمين وتساعد المشاريع على النمو.",
+    "services_title": "خدماتي",
+    "projects_title": "مشاريعي",
+    "skills_title": "المهارات والتقنيات",
+    "testimonials_title": "آراء العملاء",
+    "contact_title": "تواصل معي",
+    "contact_email": "contact@example.com",
+    "contact_phone": "+1 (555) 234-5678",
+    "contact_whatsapp": "+1 (555) 234-5678",
+    "contact_address": "متاح للعمل عن بُعد وحول العالم",
+    "social_github": "https://github.com/yourusername",
+    "social_linkedin": "https://linkedin.com/in/yourusername",
+    "social_twitter": "https://twitter.com/yourusername",
+    "social_instagram": "https://instagram.com/yourusername",
+    "footer_text": "© 2026 DevPortfolio. جميع الحقوق محفوظة.",
+    "years_experience": "5+",
+    "projects_count": "40+",
+    "clients_count": "25+",
+    "satisfaction_rate": "100%"
+  }
+}

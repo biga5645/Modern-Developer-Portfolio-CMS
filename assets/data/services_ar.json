@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "icon": "fas fa-globe",
+      "title": "تطوير الويب المتكامل",
+      "description": "تصميم وبرمجة مواقع وتطبيقات ويب سريعة، متجاوبة ومبنية بأحدث المعايير البرمجية",
+      "color": "#00d4ff"
+    },
+    {
+      "id": 2,
+      "icon": "fab fa-android",
+      "title": "تطبيقات الهواتف الذكية",
+      "description": "برمجة تطبيقات هواتف حديثة وسلسة لنظامي Android وiOS بأداء استثنائي",
+      "color": "#6c63ff"
+    },
+    {
+      "id": 3,
+      "icon": "fas fa-tachometer-alt",
+      "title": "لوحات التحكم و CMS",
+      "description": "بناء لوحات تحكم مخصصة لإدارة المحتوى والبيانات والمستخدمين بسهولة وأمان",
+      "color": "#ff6b9d"
+    },
+    {
+      "id": 4,
+      "icon": "fas fa-palette",
+      "title": "تصميم واجهات UI/UX",
+      "description": "تصميم واجهات عصرية ونماذج تفاعلية تركز على تجربة المستخدم والجمالية البصرية",
+      "color": "#ffd700"
+    },
+    {
+      "id": 5,
+      "icon": "fas fa-database",
+      "title": "قواعد البيانات و APIs",
+      "description": "هندسة قواعد بيانات سريعة وبناء واجهات برمجية RESTful آمنة وقابلة للتوسع",
+      "color": "#00d4ff"
+    },
+    {
+      "id": 6,
+      "icon": "fas fa-rocket",
+      "title": "تحسين الأداء و SEO",
+      "description": "تسريع زمن تحميل الصفحات وتحسين ظهور الموقع في محركات البحث وفق معايير Core Web Vitals",
+      "color": "#6c63ff"
+    }
+  ]
+}

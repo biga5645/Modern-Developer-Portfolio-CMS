@@ -1,0 +1,59 @@
+{
+  "nav_home": "Accueil",
+  "nav_about": "À propos",
+  "nav_services": "Services",
+  "nav_projects": "Projets",
+  "nav_skills": "Compétences",
+  "nav_testimonials": "Témoignages",
+  "nav_contact": "Contact",
+
+  "loading_services": "Chargement des services...",
+  "loading_projects": "Chargement des projets...",
+  "loading_skills": "Chargement des compétences...",
+  "loading_testimonials": "Chargement des témoignages...",
+
+  "view_details": "Détails",
+  "view_demo": "Démo",
+
+  "filter_all": "Tout",
+
+  "form_project_type": "Type de projet",
+  "form_project_type_placeholder": "Choisir le type",
+
+  "project_type_web": "Application Web",
+  "project_type_android": "Application Android",
+  "project_type_desktop": "Application Bureau",
+  "project_type_design": "Design UI/UX",
+  "project_type_other": "Autre",
+
+  "form_name": "Nom complet",
+  "form_email": "Adresse email",
+  "form_phone": "Numéro de téléphone",
+  "form_subject": "Sujet",
+  "form_message": "Votre message",
+
+  "form_send": "Envoyer le message",
+  "form_sending": "Envoi en cours...",
+
+  "form_success": "Message envoyé avec succès ! Nous vous contacterons bientôt.",
+
+  "form_error_required": "Veuillez remplir tous les champs requis.",
+  "form_error_email": "Adresse email invalide.",
+  "form_error_rate": "Limite dépassée. Réessayez plus tard.",
+  "form_error_server": "Erreur lors de l'envoi. Réessayez.",
+
+  "stat_experience": "Ans d'expérience",
+  "stat_projects": "Projets réalisés",
+  "stat_clients": "Clients satisfaits",
+  "stat_satisfaction": "Taux de satisfaction",
+
+  "about_strength_1": "Code propre et évolutif",
+  "about_strength_2": "Livraison dans les délais",
+  "about_strength_3": "Support technique continu",
+  "about_strength_4": "Design moderne et élégant",
+
+  "scroll_top": "Haut de page",
+  "hero_scroll": "Défiler vers le bas",
+
+  "copyright": "© 2026 DevPortfolio. Tous droits réservés."
+}

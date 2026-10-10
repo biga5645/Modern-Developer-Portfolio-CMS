@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "icon": "fas fa-globe",
+      "title": "Développement Web Full Stack",
+      "description": "Conception et développement de sites et applications web modernes, rapides et responsifs",
+      "color": "#00d4ff"
+    },
+    {
+      "id": 2,
+      "icon": "fab fa-android",
+      "title": "Applications Mobiles",
+      "description": "Développement d'applications mobiles performantes pour Android et iOS",
+      "color": "#6c63ff"
+    },
+    {
+      "id": 3,
+      "icon": "fas fa-tachometer-alt",
+      "title": "Tableaux de bord & CMS",
+      "description": "Création de tableaux de bord administratifs sur mesure pour gérer facilement vos données",
+      "color": "#ff6b9d"
+    },
+    {
+      "id": 4,
+      "icon": "fas fa-palette",
+      "title": "Design UI/UX",
+      "description": "Conception d'interfaces esthétiques et ergonomiques centrées sur l'utilisateur",
+      "color": "#ffd700"
+    },
+    {
+      "id": 5,
+      "icon": "fas fa-database",
+      "title": "APIs & Bases de Données",
+      "description": "Conception de bases de données optimisées et création d'APIs RESTful sécurisées",
+      "color": "#00d4ff"
+    },
+    {
+      "id": 6,
+      "icon": "fas fa-rocket",
+      "title": "Performance & SEO",
+      "description": "Optimisation de la vitesse de chargement et référencement naturel SEO",
+      "color": "#6c63ff"
+    }
+  ]
+}
