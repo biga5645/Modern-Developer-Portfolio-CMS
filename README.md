@@ -4,7 +4,7 @@
 > Created by [biga5645](https://github.com/biga5645).
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://biga5645.github.io/Modern-Developer-Portfolio-CMS/)
-[![Buy on Gumroad](https://img.shields.io/badge/Buy%20Template-Gumroad%20$19--$49-ff6b9d?style=for-the-badge&logo=gumroad)](https://gumroad.com)
+[![Buy on Gumroad](https://img.shields.io/badge/Buy%20Template-Gumroad%20$19-ff6b9d?style=for-the-badge&logo=gumroad)](https://bigaonee.gumroad.com/l/developer-portfolio-cms)
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777bb4?style=for-the-badge&logo=php)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479a1?style=for-the-badge&logo=mysql)](https://mysql.com)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ed?style=for-the-badge&logo=docker)](https://docker.com)
@@ -55,7 +55,7 @@
 ## 🚀 How to Get the Full Version
 You can purchase the complete production-ready source code on **Gumroad**:
 
-👉 **[Get Modern Developer Portfolio on Gumroad](https://gumroad.com)**
+👉 **[Get Modern Developer Portfolio on Gumroad ($19)](https://bigaonee.gumroad.com/l/developer-portfolio-cms)**
 
 ### What you get after purchase:
 - 📦 **`Modern-Developer-Portfolio-CMS-v1.0.zip`** containing:

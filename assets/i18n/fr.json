@@ -6,54 +6,82 @@
   "nav_skills": "Compétences",
   "nav_testimonials": "Témoignages",
   "nav_contact": "Contact",
+  "nav_admin": "Panneau d'administration",
 
-  "loading_services": "Chargement des services...",
-  "loading_projects": "Chargement des projets...",
-  "loading_skills": "Chargement des compétences...",
-  "loading_testimonials": "Chargement des témoignages...",
-
-  "view_details": "Détails",
-  "view_demo": "Démo",
-
-  "filter_all": "Tout",
-
-  "form_project_type": "Type de projet",
-  "form_project_type_placeholder": "Choisir le type",
-
-  "project_type_web": "Application Web",
-  "project_type_android": "Application Android",
-  "project_type_desktop": "Application Bureau",
-  "project_type_design": "Design UI/UX",
-  "project_type_other": "Autre",
-
-  "form_name": "Nom complet",
-  "form_email": "Adresse email",
-  "form_phone": "Numéro de téléphone",
-  "form_subject": "Sujet",
-  "form_message": "Votre message",
-
-  "form_send": "Envoyer le message",
-  "form_sending": "Envoi en cours...",
-
-  "form_success": "Message envoyé avec succès ! Nous vous contacterons bientôt.",
-
-  "form_error_required": "Veuillez remplir tous les champs requis.",
-  "form_error_email": "Adresse email invalide.",
-  "form_error_rate": "Limite dépassée. Réessayez plus tard.",
-  "form_error_server": "Erreur lors de l'envoi. Réessayez.",
+  "hero_badge": "Développeur Web & Mobile Full Stack",
+  "hero_cta_explore": "Explorer mes projets",
+  "hero_cta_contact": "Contactez-moi",
+  "hero_scroll": "Défiler vers le bas",
 
   "stat_experience": "Ans d'expérience",
   "stat_projects": "Projets réalisés",
   "stat_clients": "Clients satisfaits",
   "stat_satisfaction": "Taux de satisfaction",
 
+  "badge_about": "À propos",
+  "badge_clean_code": "Code propre",
+  "badge_high_perf": "Haute performance",
   "about_strength_1": "Code propre et évolutif",
   "about_strength_2": "Livraison dans les délais",
   "about_strength_3": "Support technique continu",
   "about_strength_4": "Design moderne et élégant",
+  "cta_start_project": "Démarrer votre projet",
 
+  "badge_services": "Ce que nous offrons",
+  "services_subtitle": "Une suite complète de solutions numériques conçues pour votre réussite",
+  "loading_services": "Chargement des services...",
+
+  "badge_projects": "Nos réalisations",
+  "projects_subtitle": "Sélection de projets récents réalisés avec les standards les plus exigeants",
+  "loading_projects": "Chargement des projets...",
+  "filter_all": "Tout",
+  "view_details": "Détails",
+  "view_demo": "Démo en direct",
+  "no_projects_found": "Aucun projet trouvé",
+
+  "badge_skills": "Nos technologies",
+  "loading_skills": "Chargement des compétences...",
+
+  "badge_testimonials": "Ce que disent nos clients",
+  "loading_testimonials": "Chargement des témoignages...",
+
+  "badge_contact": "Un projet en tête ?",
+  "contact_info_title": "Informations de contact",
+  "contact_info_subtitle": "Nous sommes à votre disposition pour concrétiser vos ambitions numériques",
+  "contact_label_email": "Adresse email",
+  "contact_label_phone": "Numéro de téléphone",
+  "contact_label_address": "Localisation",
+
+  "form_name": "Nom complet",
+  "form_email": "Adresse email",
+  "form_phone": "Numéro de téléphone",
+  "form_subject": "Sujet",
+  "form_project_type": "Type de projet",
+  "form_project_type_placeholder": "Choisir le type",
+  "project_type_web": "Application Web",
+  "project_type_android": "Application Mobile",
+  "project_type_desktop": "Application Bureau",
+  "project_type_design": "Design UI/UX",
+  "project_type_other": "Autre",
+  "form_message": "Votre message",
+  "form_send": "Envoyer le message",
+  "form_sending": "Envoi en cours...",
+  "form_success": "Message envoyé avec succès ! Nous vous contacterons bientôt.",
+  "form_error_required": "Veuillez remplir tous les champs requis.",
+  "form_error_email": "Adresse email invalide.",
+  "form_error_rate": "Limite dépassée. Réessayez plus tard.",
+  "form_error_server": "Erreur lors de l'envoi. Réessayez.",
+
+  "placeholder_name": "Votre nom...",
+  "placeholder_email": "example@email.com",
+  "placeholder_phone": "+33 ...",
+  "placeholder_subject": "Sujet du message",
+  "placeholder_message": "Écrivez votre message ici...",
+
+  "footer_bio": "Portfolio développeur professionnel présentant des applications web, mobiles et des solutions performantes.",
+  "footer_quick_links": "Liens rapides",
+  "footer_contact_title": "Contact",
   "scroll_top": "Haut de page",
-  "hero_scroll": "Défiler vers le bas",
-
-  "copyright": "© 2026 DevPortfolio. Tous droits réservés."
+  "copyright": "© 2026 DevPortfolio. Tous droits réservés.",
+  "footer_made_with": "Créé avec ❤️ DevPortfolio Pro"
 }

@@ -136,7 +136,11 @@ const App = {
     const heroCta = document.getElementById('hero-cta');
     if (heroTitle && clean(s.hero_title)) heroTitle.innerHTML = clean(s.hero_title);
     if (heroSub && clean(s.hero_subtitle)) heroSub.textContent = clean(s.hero_subtitle);
-    if (heroCta && clean(s.hero_cta)) heroCta.textContent = clean(s.hero_cta);
+    if (heroCta && clean(s.hero_cta)) {
+      const span = heroCta.querySelector('span');
+      if (span) span.textContent = clean(s.hero_cta);
+      else heroCta.innerHTML = `<i class="fas fa-rocket"></i> <span>${clean(s.hero_cta)}</span>`;
+    }
 
     // About
     const aboutTitle = document.getElementById('about-title');
@@ -918,6 +922,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await Lang.load('en');
   await Lang.load(savedLang);
   document.documentElement.lang = savedLang;
+  document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
   document.body.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === savedLang);

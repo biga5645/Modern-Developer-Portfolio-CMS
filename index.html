@@ -115,16 +115,15 @@
   <div class="demo-bar" id="demo-bar">
     <div class="demo-bar-left">
       <span class="demo-tag">⚡ Live Preview</span>
-      <span class="demo-msg">This is a public preview. The full commercial version includes a <strong>Custom PHP/MySQL Admin Panel</strong>, 1-Click Installer, and Docker!</span>
+      <span class="demo-msg">Public Preview. The complete commercial version includes a <strong>Custom PHP/MySQL Admin Panel</strong>, 1-Click Installer, and Docker!</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px">
-      <a href="https://gumroad.com" target="_blank" class="demo-cta">
-        <i class="fas fa-shopping-cart"></i> Buy Full Template on Gumroad
+      <a href="https://bigaonee.gumroad.com/l/developer-portfolio-cms" target="_blank" class="demo-cta">
+        <i class="fas fa-shopping-cart"></i> Buy Full Template ($19)
       </a>
       <button class="demo-close-btn" onclick="document.getElementById('demo-bar').style.display='none'">&times;</button>
     </div>
   </div>
-  
 
 <!-- ============================================================ -->
 <!-- LOADING SCREEN -->
@@ -141,7 +140,8 @@
   <div class="nav-container">
     <!-- Logo -->
     <a href="#hero" class="nav-logo" data-setting="site_name">
-      DevPortfolio Pro    </a>
+      DevPortfolio Pro
+    </a>
 
     <!-- Navigation Links -->
     <ul class="nav-links" id="nav-links">
@@ -163,8 +163,8 @@
       <!-- Language Switcher -->
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="ar">AR</button>
-        <button class="lang-btn " data-lang="fr">FR</button>
-        <button class="lang-btn " data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
       <!-- Mobile Toggle -->
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
@@ -191,25 +191,29 @@
       <!-- Badge -->
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
-        <span>مطور ويب وتطبيقات متكامل</span>
+        <span data-i18n="hero_badge">مطور ويب وتطبيقات متكامل</span>
       </div>
 
       <!-- Title -->
       <h1 class="hero-title" id="hero-title">
-        أبني تجارب ويب استثنائية ومنتجات رقمية مبتكرة      </h1>
+        أبني تجارب ويب استثنائية ومنتجات رقمية مبتكرة
+      </h1>
 
       <!-- Subtitle -->
       <p class="hero-subtitle" id="hero-subtitle">
-        مطور شغوف بتحويل الأفكار المعقدة إلى واجهات سلسة، وتطبيقات سريعة، وبنية برمجية متماسكة      </p>
+        مطور شغوف بتحويل الأفكار المعقدة إلى واجهات سلسة، وتطبيقات سريعة، وبنية برمجية متماسكة
+      </p>
 
       <!-- CTA Buttons -->
       <div class="hero-cta">
         <a href="#services" class="btn btn-primary btn-lg" id="hero-cta">
           <i class="fas fa-rocket"></i>
-          استكشف أعمالي        </a>
+          <span data-i18n="hero_cta_explore">استكشف أعمالي</span>
+        </a>
         <a href="#contact" class="btn btn-outline btn-lg">
           <i class="fas fa-paper-plane"></i>
-          تواصل معنا        </a>
+          <span data-i18n="hero_cta_contact">تواصل معنا</span>
+        </a>
       </div>
 
       <!-- Stats -->
@@ -251,17 +255,19 @@
       <div class="about-visual animate-on-scroll">
         <div class="about-img-wrapper">
           <div class="about-img-circle">
-            <div class="about-img-inner">من</div>
+            <div class="about-img-inner">
+              <i class="fas fa-laptop-code" style="background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 25px rgba(108,99,255,0.7));font-size:5.5rem;"></i>
+            </div>
           </div>
         </div>
         <!-- Floating badges -->
         <div class="about-floating-badge b1">
           <i class="fas fa-code" style="color:#6c63ff"></i>
-          <span>كود نظيف</span>
+          <span data-i18n="badge_clean_code">كود نظيف</span>
         </div>
         <div class="about-floating-badge b2">
           <i class="fas fa-bolt" style="color:#ffd700"></i>
-          <span>أداء عالٍ</span>
+          <span data-i18n="badge_high_perf">أداء عالٍ</span>
         </div>
       </div>
 
@@ -269,7 +275,7 @@
       <div class="about-content animate-on-scroll animate-delay-2">
         <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
           <span class="hero-badge-dot"></span>
-          <span>من نحن</span>
+          <span data-i18n="badge_about">من نحن</span>
         </div>
         <h2 id="about-title">نبذة عني</h2>
         <div class="section-divider" style="margin:16px 0;"></div>
@@ -285,7 +291,8 @@
 
         <a href="#contact" class="btn btn-primary" style="margin-top:8px">
           <i class="fas fa-handshake"></i>
-          ابدأ مشروعك        </a>
+          <span data-i18n="cta_start_project">ابدأ مشروعك</span>
+        </a>
       </div>
     </div>
   </div>
@@ -299,11 +306,11 @@
     <div class="section-header animate-on-scroll">
       <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
         <span class="hero-badge-dot"></span>
-        <span>ما نقدمه</span>
+        <span data-i18n="badge_services">ما نقدمه</span>
       </div>
       <h2 id="services-title">خدماتي</h2>
       <div class="section-divider"></div>
-      <p>نقدّم مجموعة متكاملة من الخدمات الرقمية المصممة لنجاح أعمالك</p>
+      <p data-i18n="services_subtitle">نقدّم مجموعة متكاملة من الخدمات الرقمية المصممة لنجاح أعمالك</p>
     </div>
     <!-- Dynamically loaded by JS -->
     <div class="services-grid" id="services-grid">
@@ -322,11 +329,11 @@
     <div class="section-header animate-on-scroll">
       <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
         <span class="hero-badge-dot"></span>
-        <span>أعمالنا</span>
+        <span data-i18n="badge_projects">أعمالنا</span>
       </div>
       <h2 id="projects-title">مشاريعي</h2>
       <div class="section-divider"></div>
-      <p>نماذج من أبرز مشاريعنا المنجزة بجودة عالية</p>
+      <p data-i18n="projects_subtitle">نماذج من أبرز مشاريعنا المنجزة بجودة عالية</p>
     </div>
     <!-- Filter buttons (loaded by JS) -->
     <div class="projects-filter" id="projects-filter"></div>
@@ -347,7 +354,7 @@
     <div class="section-header animate-on-scroll">
       <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
         <span class="hero-badge-dot"></span>
-        <span>تقنياتنا</span>
+        <span data-i18n="badge_skills">تقنياتنا</span>
       </div>
       <h2 id="skills-title">المهارات والتقنيات</h2>
       <div class="section-divider"></div>
@@ -368,7 +375,7 @@
     <div class="section-header animate-on-scroll">
       <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
         <span class="hero-badge-dot"></span>
-        <span>ماذا يقول عملاؤنا</span>
+        <span data-i18n="badge_testimonials">ماذا يقول عملاؤنا</span>
       </div>
       <h2 id="testimonials-title">آراء العملاء</h2>
       <div class="section-divider"></div>
@@ -400,7 +407,7 @@
     <div class="section-header animate-on-scroll">
       <div class="hero-badge" style="display:inline-flex;margin-bottom:16px">
         <span class="hero-badge-dot"></span>
-        <span>هل لديك مشروع؟</span>
+        <span data-i18n="badge_contact">هل لديك مشروع؟</span>
       </div>
       <h2 id="contact-title">تواصل معي</h2>
       <div class="section-divider"></div>
@@ -409,21 +416,22 @@
     <div class="contact-grid">
       <!-- Contact Info -->
       <div class="animate-on-scroll">
-        <h3>معلومات التواصل</h3>
-        <p style="color:var(--text-secondary);margin-top:8px;margin-bottom:28px">
-          نحن هنا للإجابة عن استفساراتك        </p>
+        <h3 data-i18n="contact_info_title">معلومات التواصل</h3>
+        <p style="color:var(--text-secondary);margin-top:8px;margin-bottom:28px" data-i18n="contact_info_subtitle">
+          نحن هنا للإجابة عن استفساراتك وتحويل فكرتك إلى واقع
+        </p>
 
         <div class="contact-item">
           <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
           <div class="contact-item-text">
-            <label>البريد الإلكتروني</label>
+            <label data-i18n="contact_label_email">البريد الإلكتروني</label>
             <a href="mailto:contact@example.com" data-setting="contact_email">contact@example.com</a>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
           <div class="contact-item-text">
-            <label>الهاتف</label>
+            <label data-i18n="contact_label_phone">الهاتف</label>
             <a href="tel:+1 (555) 234-5678" data-setting="contact_phone">+1 (555) 234-5678</a>
           </div>
         </div>
@@ -437,7 +445,7 @@
         <div class="contact-item">
           <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div class="contact-item-text">
-            <label>العنوان</label>
+            <label data-i18n="contact_label_address">العنوان</label>
             <span data-setting="contact_address">متاح للعمل عن بُعد وحول العالم</span>
           </div>
         </div>
@@ -460,71 +468,71 @@
               <div class="form-group">
                 <label class="form-label" data-i18n="form_name">الاسم الكامل</label>
                 <input type="text" name="name" class="form-control" required
-                  placeholder="اكتب اسمك...">
+                  placeholder="اكتب اسمك..." data-i18n="placeholder_name" data-i18n-attr="placeholder">
               </div>
               <div class="form-group">
                 <label class="form-label" data-i18n="form_email">البريد الإلكتروني</label>
                 <input type="email" name="email" class="form-control" required
-                  placeholder="example@email.com">
+                  placeholder="example@email.com" data-i18n="placeholder_email" data-i18n-attr="placeholder">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" data-i18n="form_phone"> رقم الهاتف</label>
+                <label class="form-label" data-i18n="form_phone">رقم الهاتف</label>
                 <input type="tel" name="phone" class="form-control"
-                  placeholder="+212 ...">
+                  placeholder="+212 ..." data-i18n="placeholder_phone" data-i18n-attr="placeholder">
               </div>
               <div class="form-group">                  
-                <label class="form-label" data-i18n="form_subject"> الموضوع</label>
+                <label class="form-label" data-i18n="form_subject">الموضوع</label>
                 <input type="text" name="subject" class="form-control"
-                  placeholder="موضوع الرسالة">
+                  placeholder="موضوع الرسالة" data-i18n="placeholder_subject" data-i18n-attr="placeholder">
               </div>
-              </div>
-              <!-- Project Type -->
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_project_type">نوع المشروع</label>
-                <div class="project-type-grid" id="project-type-grid">
-                  <label class="project-type-option">
-                    <input type="radio" name="project_type" value="web">
-                    <span class="project-type-card">
-                      <i class="fas fa-globe"></i>
-                      <span data-i18n="project_type_web">موقع ويب</span>
-                    </span>
-                  </label>
-                  <label class="project-type-option">
-                    <input type="radio" name="project_type" value="android">
-                    <span class="project-type-card">
-                      <i class="fab fa-android"></i>
-                      <span data-i18n="project_type_android">تطبيق أندرويد</span>
-                    </span>
-                  </label>
-                  <label class="project-type-option">
-                    <input type="radio" name="project_type" value="desktop">
-                    <span class="project-type-card">
-                      <i class="fas fa-desktop"></i>
-                      <span data-i18n="project_type_desktop">تطبيق سطح المكتب</span>
-                    </span>
-                  </label>
-                  <label class="project-type-option">
-                    <input type="radio" name="project_type" value="design">
-                    <span class="project-type-card">
-                      <i class="fas fa-paint-brush"></i>
-                      <span data-i18n="project_type_design">تصميم UI/UX</span>
-                    </span>
-                  </label>
-                  <label class="project-type-option">
-                    <input type="radio" name="project_type" value="other">
-                    <span class="project-type-card">
-                      <i class="fas fa-ellipsis-h"></i>
-                      <span data-i18n="project_type_other">أخرى</span>
-                    </span>
-                  </label>
-                </div>
-              </div>
+            </div>
+            <!-- Project Type -->
             <div class="form-group">
-              <label class="form-label" data-i18n="form_message">الرسالة </label>
+              <label class="form-label" data-i18n="form_project_type">نوع المشروع</label>
+              <div class="project-type-grid" id="project-type-grid">
+                <label class="project-type-option">
+                  <input type="radio" name="project_type" value="web">
+                  <span class="project-type-card">
+                    <i class="fas fa-globe"></i>
+                    <span data-i18n="project_type_web">موقع ويب</span>
+                  </span>
+                </label>
+                <label class="project-type-option">
+                  <input type="radio" name="project_type" value="android">
+                  <span class="project-type-card">
+                    <i class="fab fa-android"></i>
+                    <span data-i18n="project_type_android">تطبيق هاتف</span>
+                  </span>
+                </label>
+                <label class="project-type-option">
+                  <input type="radio" name="project_type" value="desktop">
+                  <span class="project-type-card">
+                    <i class="fas fa-desktop"></i>
+                    <span data-i18n="project_type_desktop">تطبيق سطح المكتب</span>
+                  </span>
+                </label>
+                <label class="project-type-option">
+                  <input type="radio" name="project_type" value="design">
+                  <span class="project-type-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <span data-i18n="project_type_design">تصميم UI/UX</span>
+                  </span>
+                </label>
+                <label class="project-type-option">
+                  <input type="radio" name="project_type" value="other">
+                  <span class="project-type-card">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span data-i18n="project_type_other">أخرى</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_message">الرسالة</label>
               <textarea name="message" class="form-control" rows="5" required
-                placeholder="اكتب رسالتك هنا..."></textarea>
+                placeholder="اكتب رسالتك هنا..." data-i18n="placeholder_message" data-i18n-attr="placeholder"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%">
               <i class="fas fa-paper-plane"></i>
@@ -546,7 +554,7 @@
       <!-- Brand -->
       <div class="footer-brand">
         <div class="nav-logo" data-setting="site_name">DevPortfolio Pro</div>
-        <p>بورتفوليو احترافي لعرض الأعمال والمهارات البرمجية وتطوير الويب وتطبيقات الهاتف</p>
+        <p data-i18n="footer_bio">بورتفوليو احترافي لعرض الأعمال والمهارات البرمجية وتطوير الويب وتطبيقات الهاتف</p>
         <div class="social-links" style="margin-top:16px">
           <a href="#" class="social-link" data-social="github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           <a href="#" class="social-link" data-social="linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -557,40 +565,40 @@
 
       <!-- Quick Links -->
       <div class="footer-col">
-        <h4>روابط سريعة</h4>
+        <h4 data-i18n="footer_quick_links">روابط سريعة</h4>
         <ul class="footer-links">
-          <li><a href="#about"    data-i18n="nav_about"> من نحن</a></li>
-          <li><a href="#services" data-i18n="nav_services"> الخدمات</a></li>
-          <li><a href="#projects" data-i18n="nav_projects"> المشاريع</a></li>
-          <li><a href="#skills"   data-i18n="nav_skills"> المهارات</a></li>
-          <li><a href="admin/">  لوحة التحكم</a></li>
+          <li><a href="#about"    data-i18n="nav_about">من نحن</a></li>
+          <li><a href="#services" data-i18n="nav_services">الخدمات</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">المشاريع</a></li>
+          <li><a href="#skills"   data-i18n="nav_skills">المهارات</a></li>
+          <li><a href="admin/"    data-i18n="nav_admin">لوحة التحكم</a></li>
         </ul>
       </div>
 
       <!-- Contact -->
       <div class="footer-col">
-        <h4>تواصل</h4>
+        <h4 data-i18n="footer_contact_title">تواصل</h4>
         <ul class="footer-links">
           <li><a href="mailto:contact@example.com">contact@example.com</a></li>
           <li><a href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></li> 
-          <li><span>متاح للعمل عن بُعد وحول العالم</span></li>
+          <li><span data-setting="contact_address">متاح للعمل عن بُعد وحول العالم</span></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
       <span id="footer-text">© 2026 DevPortfolio. جميع الحقوق محفوظة.</span>
-      <span>صُنع بـ ❤️ DevPortfolio Pro</span>
+      <span data-i18n="footer_made_with">صُنع بـ ❤️ DevPortfolio Pro</span>
     </div>
   </div>
 </footer>
 
 <!-- Scroll to top button -->
-<button id="scrollTop" title="العودة للأعلى">
+<button id="scrollTop" title="العودة للأعلى" data-i18n="scroll_top" data-i18n-attr="title">
   <i class="fas fa-chevron-up"></i>
 </button>
 
 <!-- Main JS (defer for performance) -->
-<script src="assets/js/main.js?v=1791630631" defer></script>
+<script src="assets/js/main.js?v=1791630632" defer></script>
 </body>
 </html>

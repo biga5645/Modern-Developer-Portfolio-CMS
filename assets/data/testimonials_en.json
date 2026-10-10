@@ -3,17 +3,17 @@
   "data": [
     {
       "id": 1,
-      "client_name": "أحمد التميمي",
-      "client_position": "مؤسس ومدير تنفيذي",
-      "client_company": "شركة الابتكار الرقمي",
+      "client_name": "Ahmed Al-Tamimi",
+      "client_position": "Founder & CEO",
+      "client_company": "Digital Innovation Co.",
       "client_avatar": null,
       "text": "Outstanding experience! The project was delivered ahead of schedule with top-tier quality. Clean codebase and excellent communication throughout.",
       "rating": 5
     },
     {
       "id": 2,
-      "client_name": "صوفيا لوران",
-      "client_position": "مديرة منتج",
+      "client_name": "Sophia Laurent",
+      "client_position": "Product Manager",
       "client_company": "NovaTech Studio",
       "client_avatar": null,
       "text": "Stunning user interface and blazing fast performance. This work directly boosted our customer engagement and conversion rates.",
@@ -21,9 +21,9 @@
     },
     {
       "id": 3,
-      "client_name": "كريم بناني",
-      "client_position": "رائد أعمال",
-      "client_company": "متجر سوق بلس",
+      "client_name": "Karim Bennani",
+      "client_position": "Tech Entrepreneur",
+      "client_company": "Souq Plus E-Commerce",
       "client_avatar": null,
       "text": "Highly recommended! Attention to detail, rock-solid security, and a super intuitive dashboard that makes daily management a breeze.",
       "rating": 5
